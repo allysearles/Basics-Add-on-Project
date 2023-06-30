@@ -4,57 +4,195 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>K9 Connection - Ally Searles</title>
-		<button>Dark Theme</button>
+		<style>
+			body {
+				background: #8eb69b;
+			}
+			h1 {
+				text-align: center;
+				padding-top: 30px;
+				font-size: 30px;
+			}
+			h2 {
+				text-align: center;
+				font-size: 18px;
+				margin-top: -10px;
+				padding-bottom: 10px;
+				text-decoration-line: underline;
+			}
+			.header-image {
+				display: block;
+				margin: 0 auto;
+				width: 50%;
+				margin-bottom: -40px;
+			}
+			.grid img {
+				width: 80%;
+				border-radius: 8px;
+				object-fit: cover;
+			}
+			.grid img:hover {
+				transform: scale(2);
+				opacity: 20%;
+			}
+			.grid {
+				margin: 15px 0;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 10px;
+				padding-left: 35px;
+			}
+			p {
+				margin: 20px;
+				text-align: center;
+				padding-top: 5px;
+				line-height: 20px;
+			}
+			.learnmore-button {
+				display: block;
+				margin: 0 auto;
+				border: 1px solid #235246;
+				color: #235246;
+				background: white;
+				font-size: 20px;
+				border-radius: 6px;
+				padding: 10px 15px;
+				transition: all 150ms ease-in-out;
+				box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+					rgba(0, 0, 0, 0.24) 0px 1px 2px;
+			}
+			.learnmore-button:hover {
+				background: #235246;
+				color: white;
+			}
+			.darktheme-button {
+				display: block;
+				margin: 0 auto;
+				border: 1px solid black;
+				color: white;
+				background: black;
+				font-size: 20px;
+				border-radius: 6px;
+				padding: 10px 15px;
+				transition: all 150ms ease-in-out;
+				box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+					rgba(0, 0, 0, 0.24) 0px 1px 2px;
+			}
+			.darktheme-button:hover {
+				background: white;
+				color: black;
+			}
+			.dark {
+				background: black;
+				color: white;
+			}
+			.dark .container {
+				background: rgba(255, 255, 255, 0.1);
+			}
+			.dark a {
+				color: #8eb69b;
+			}
+			.dark p {
+				color: grey;
+			}
+			.container {
+				max-width: 600px;
+				margin: 20px auto;
+				background: white;
+				padding: 20px;
+				border-radius: 10px;
+			}
+			footer {
+				text-align: center;
+				margin: 10px 0;
+				color: #235246;
+			}
+			.dark footer {
+				color: white;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>K9 Connection</h1>
-		<h2>A Passion Of Mine</h2>
-		<p>
-			Welcome to my website! My passion for dogs and K-9 training has been a
-			driving force in my life, and I'm thrilled to share my journey with you.
-			As a dedicated volunteer at Guiding Eyes For The Blind in the Finger Lakes
-			Region of Ithaca, NY, I have had the incredible opportunity to raise and
-			train three remarkable Labrador Retriever service dogs. Each week, I
-			eagerly participated in rigorous trainings and testing, honing my skills
-			alongside these incredible companions.
-		</p>
-		<p>
-			I am immensely proud to say that two out of the three dogs I trained
-			successfully achieved their full certification, a testament to our
-			unwavering dedication and strong bond. Witnessing their transformation
-			from enthusiastic pups to skilled service dogs was an indescribable joy.
-			One of my exceptional canines even went on to pursue Autism for Kids
-			training, furthering their impact in the lives of others.
-		</p>
-		<p>
-			In addition to my work at Guiding Eyes For The Blind, I also devoted my
-			time as a volunteer at the Horseheads Animal Shelter in Horseheads, NY.
-			From 2008 to 2011, I served as a media manager and actively facilitated
-			the socialization of shelter dogs to enhance their chances of finding
-			forever homes. I walked newly rescued dogs and provided valuable
-			assistance to the shelter staff, ensuring their needs were met and that
-			they received proper treat preparation.
-		</p>
-		<p>
-			My love for K-9 training goes beyond a mere hobby; it is a fundamental
-			part of who I am. The connection I form with these incredible animals, the
-			joy of witnessing their growth and transformation, and the ability to make
-			a positive impact in the lives of others through their training is an
-			experience I cherish deeply.
-		</p>
-		<p>
-			Thank you for visiting my website, and I hope you join me on this
-			incredible journey of canine companionship and K-9 training. Together, we
-			can celebrate the extraordinary bond between humans and dogs while making
-			a difference in the world, one paw at a time.
-		</p>
-		<img
-			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcohLky7rDm48a3YX62rmVU8wktGeZpmHiPg&usqp=CAU"
-		/>
+		<button class="darktheme-button">Dark Theme</button>
+		<div class="container">
+			<img
+				class="header-image"
+				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcohLky7rDm48a3YX62rmVU8wktGeZpmHiPg&usqp=CAU"
+			/>
+			<h1 class="title">K9 Connection</h1>
+			<h2 class="title-description">A Long Standing Interest Of Mine</h2>
+			<p>
+				Welcome to my website! My passion for dogs and K-9 training has been a
+				driving force in my life, and I'm thrilled to share my journey with you.
+				As a dedicated volunteer at Guiding Eyes For The Blind in the Finger
+				Lakes Region of Ithaca, NY, I have had the incredible opportunity to
+				raise and train three remarkable Labrador Retriever service dogs. Each
+				week, I eagerly participated in rigorous trainings and testing, honing
+				my skills alongside these incredible companions.
+			</p>
+			<p>
+				I am immensely proud to say that two out of the three dogs I trained
+				successfully achieved their full certification, a testament to our
+				unwavering dedication and strong bond. Witnessing their transformation
+				from enthusiastic pups to skilled service dogs was an indescribable joy.
+				One of my exceptional canines even went on to pursue Autism for Kids
+				training, furthering their impact in the lives of others.
+			</p>
+			<p>
+				In addition to my work at Guiding Eyes For The Blind, I also devoted my
+				time as a volunteer at the Horseheads Animal Shelter in Horseheads, NY.
+				From 2008 to 2011, I served as a media manager and actively facilitated
+				the socialization of shelter dogs to enhance their chances of finding
+				forever homes. I walked newly rescued dogs and provided valuable
+				assistance to the shelter staff, ensuring their needs were met and that
+				they received proper treat preparation.
+			</p>
+			<p>
+				My love for K-9 training goes beyond a mere hobby; it is a fundamental
+				part of who I am. The connection I form with these incredible animals,
+				the joy of witnessing their growth and transformation, and the ability
+				to make a positive impact in the lives of others through their training
+				is an experience I cherish deeply.
+			</p>
+			<p>
+				Thank you for visiting my website, and I hope you join me on this
+				incredible journey of canine companionship and K-9 training. Together,
+				we can celebrate the extraordinary bond between humans and dogs while
+				making a difference in the world, one paw at a time.
+			</p>
+			<div class="grid">
+				<img
+					src="data:image/png;base64,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"
+				/>
+				<img
+					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdeSCyXenpiGPlV5hBjgMwLbDMPMQXfq3d28pX0S9EUNyqd79U-hjM98FJCdnAoZw0wuk&usqp=CAU"
+				/>
+				<img
+					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAYxrfe_qwLL0VJOm6UYWS-S8r2XcKE4zO35Ffqa2XYOwYZZcOxvRa7llnt-g6bWX7AQI&usqp=CAU"
+				/>
+			</div>
+			<a
+				href="https://incomparable-dieffenbachia-e81c3a.netlify.app/about.html"
+			>
+				<button class="learnmore-button">Learn More</button>
+			</a>
+		</div>
 
-		<button>Learn More</button>
 		<footer>
 			<p>Coded By: Ally Searles</p>
 		</footer>
+		<script>
+			function changeTheme() {
+				let body = document.querySelector("body");
+				if (body.classList.contains("dark")) {
+					body.classList.remove("dark");
+				} else {
+					body.classList.add("dark");
+				}
+			}
+
+			let darkthemeButton = document.querySelector(".darktheme-button");
+			darkthemeButton.addEventListener("click", changeTheme);
+		</script>
 	</body>
 </html>
